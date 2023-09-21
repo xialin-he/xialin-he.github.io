@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Visual Manipulation with legs"
+date:   2023-09-20 22:21:59 +00:00
+image: /images/Leg_mani.png
+categories: research
+author: "Xialin He"
+authors: "<strong>Xialin He</strong>*, Chengjing Yuan*, Wenxuan Zhou, Ruihan Yang, David Held, Xiaolong Wang"
+venue: "ICRA 2024 (in submission)"
+# arxiv: https://arxiv.org/abs/2212.07740
+# code: https://github.com/leonidk/fmb-plus
+website: https://hacleg.github.io/
+---
+We propose a system that enables quadruped to manipulate objects with legs. We use reinforcement learning to train a policy to interact with the object based on point cloud observations. The action output of the policy is executed on the quadruped robot using impedance control and MPC. In the experiments, we provide comprehensive evaluation of the proposed system both in simulation and in the real world, demonstrating manipulation skills with legs that has not been shown in previous work.

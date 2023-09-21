@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "sim-to-real transfer for quadrupedal locomotion via terrain transformer"
+date:   2023-09-20 22:21:59 +00:00
+image: /images/TERT.png
+categories: research
+author: "Xialin He"
+authors: "Hang lai, Weinan Zhang, <strong>Xialin He</strong>, Chen Yu, Zheng Tian, Yong Yu, Jun Wang"
+venue: "ICRA 2023"
+arxiv: https://arxiv.org/abs/2212.07740
+# code: https://github.com/leonidk/fmb-plus
+# website: https://leonidk.github.io/fmb-plus
+---
+we propose Terrain Transformer (TERT), a high-capacity Transformer model for quadrupedal locomotion control on various terrains.
