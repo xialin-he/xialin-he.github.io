@@ -11,4 +11,4 @@ venue: "ICRA2024 (in submission)"
 # code: https://github.com/leonidk/fmb-plus
 website: https://hacleg.github.io/
 ---
-We propose a system that enables quadruped to manipulate objects with legs. We use reinforcement learning to train a policy to interact with the object based on point cloud observations. The action output of the policy is executed on the quadruped robot using impedance control and MPC. In the experiments, we provide comprehensive evaluation of the proposed system both in simulation and in the real world, demonstrating manipulation skills with legs that has not been shown in previous work.
+We propose a system that enables quadruped to manipulate objects with legs. We use reinforcement learning to train a policy to interact with the object based on point cloud observations, which demonstrates advanced manipulation skills with legs that has not been shown in previous work.
