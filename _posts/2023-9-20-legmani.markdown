@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Visual Manipulation with legs"
+title:  "Visual Manipulation with Legs"
 date:   2023-09-20 22:21:59 +00:00
 image: /images/Leg_mani.png
 categories: research
