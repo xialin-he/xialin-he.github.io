@@ -7,6 +7,6 @@ categories: education
 author: "Xialin He"
 school: "Shanghai Jiao Tong University"
 location: "Shanghai, China"
-degree: "B.S. in Computer Science , Sep 2020 - present"
+degree: "B.S. in Computer Science(ACM Honors Class), Sep 2020 - present"
 # degreebs: "B.S. in Computer Engineering, 2019-2023"
 ---

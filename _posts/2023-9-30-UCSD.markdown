@@ -7,6 +7,6 @@ categories: education
 author: "Xialin He"
 school: "University of California, San Diego"
 location: "San Diego, USA"
-degree: Research Intern in Electrical and Computer Engineering Department, Jun 2023 - Dec 2023"
+degree: Research Intern in Electrical and Computer Engineering Department, Jun 2023 - Dec 2023
 # degreebs: "B.S. in Computer Engineering, 2019-2023"
 ---
