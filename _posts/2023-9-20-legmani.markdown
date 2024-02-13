@@ -6,7 +6,7 @@ image: /images/Leg_mani.png
 categories: research
 author: "Xialin He"
 authors: "<strong>Xialin He</strong>*, Chengjing Yuan*, Wenxuan Zhou, Ruihan Yang, David Held, Xiaolong Wang"
-venue: "ICRA2024 (in submission)"
+venue: "RSS2024 (in submission)"
 # arxiv: https://arxiv.org/abs/2212.07740
 # code: https://github.com/leonidk/fmb-plus
 website: https://hacleg.github.io/
