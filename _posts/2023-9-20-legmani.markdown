@@ -9,6 +9,6 @@ authors: "<strong>Xialin He</strong>*, Chengjing Yuan*, Wenxuan Zhou, Ruihan Yan
 venue: "RSS2024 (in submission)"
 # arxiv: https://arxiv.org/abs/2212.07740
 # code: https://github.com/leonidk/fmb-plus
-website: https://hacleg.github.io/
+website: https://legged-manipulation.github.io/
 ---
 We propose a system that enables quadruped to manipulate objects with legs. We use reinforcement learning to train a policy to interact with the object based on point cloud observations, which demonstrates advanced manipulation skills with legs that has not been shown in previous work.
