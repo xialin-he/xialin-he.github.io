@@ -11,6 +11,6 @@ venue: "CoRL2024 (in submission)"
 # code: https://github.com/leonidk/fmb-plus
 website: https://omni.human2humanoid.com/
 dataset: https://cmu.app.box.com/s/kmayzq5ax2rxvwn97s0hzz0aq5vws9io
-videos: https://www.youtube.com/watch?v=ofgxZHv0GMk
+video: https://www.youtube.com/watch?v=ofgxZHv0GMk
 ---
 We present OmniH2O (Omni Human-to-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O enables various ways for a human to control a full-sized humanoid with dexterous hands and also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o
