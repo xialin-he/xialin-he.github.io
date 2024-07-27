@@ -1,0 +1,12 @@
+---
+layout: post
+title:  ""
+date:   2024-07-27 22:21:59 +00:00
+image: /images/UIUC.png
+categories: education
+author: "Xialin He"
+school: "University of California, San Diego"
+location: "Illinois, USA"
+degree: Ph.D. student in Computer Science, Aug 2024 - Current
+# degreebs: "B.S. in Computer Engineering, 2019-2023"
+---
