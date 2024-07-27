@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ""
-date:   2024-07-27 22:21:59 +00:00
+date:   2024-07-27 20:21:59 +00:00
 image: /images/UIUC.png
 categories: education
 author: "Xialin He"
