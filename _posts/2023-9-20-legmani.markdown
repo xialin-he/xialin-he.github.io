@@ -6,7 +6,7 @@ image: /images/Leg_mani.png
 categories: research
 author: "Xialin He"
 authors: "<strong>Xialin He</strong>*, Chengjing Yuan*, Wenxuan Zhou, Ruihan Yang, David Held, Xiaolong Wang"
-venue: "in submission"
+venue: "CoRL2024"
 # arxiv: https://arxiv.org/abs/2212.07740
 # code: https://github.com/leonidk/fmb-plus
 website: https://legged-manipulation.github.io/
