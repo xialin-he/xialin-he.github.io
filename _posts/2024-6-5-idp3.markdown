@@ -1,16 +1,15 @@
 ---
 layout: post
-title:  "OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning"
-date:   2024-06-6 22:21:59 +00:00
-image: /images/Preview-OmniH2O-GIF2M.gif
+title:  "Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies"
+date:   2024-06-5 22:21:59 +00:00
+image: /images/idp3.gif
 categories: research
 author: "Xialin He"
-authors: "Tairan He*, Zhengyi Luo*, <strong>Xialin He</strong>*, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi"
-venue: "CoRL2024"
-arxiv: https://arxiv.org/abs/2406.08858
-# code: https://github.com/leonidk/fmb-plus
-website: https://omni.human2humanoid.com/
-dataset: https://cmu.app.box.com/s/kmayzq5ax2rxvwn97s0hzz0aq5vws9io
-video: https://www.youtube.com/watch?v=ofgxZHv0GMk
+authors: "Yanjie Ze, Zixuan Chen, Wenhao Wang, Tianyi Chen, <strong>Xialin He</strong>, Ying Yuan, Xue Bin Peng, Jiajun Wu"
+venue: "in submission"
+arxiv: https://arxiv.org/abs/2410.10803
+code: https://github.com/YanjieZe/Improved-3D-Diffusion-Policy
+website: https://humanoid-manipulation.github.io/
+# video: https://www.youtube.com/watch?v=ofgxZHv0GMk
 ---
-We present OmniH2O (Omni Human-to-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O enables various ways for a human to control a full-sized humanoid with dexterous hands and also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o
+We developed the Improved 3D Diffusion Policy (iDP3), a 3D visuomotor policy that enables humanoid robots to perform autonomous tasks in varied real-world settings. Unlike traditional models, iDP3 operates without the need for camera calibration or point-cloud segmentation by utilizing egocentric 3D visual representations. This approach allows for effective performance using only lab-collected data.
