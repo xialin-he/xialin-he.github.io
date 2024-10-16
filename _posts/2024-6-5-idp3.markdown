@@ -3,7 +3,7 @@ layout: post
 title:  "Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies"
 date:   2024-06-5 22:21:59 +00:00
 image: /images/idp3.gif
-categories: research
+categories: research2
 author: "Xialin He"
 authors: "Yanjie Ze, Zixuan Chen, Wenhao Wang, Tianyi Chen, <strong>Xialin He</strong>, Ying Yuan, Xue Bin Peng, Jiajun Wu"
 venue: "arxiv2024"

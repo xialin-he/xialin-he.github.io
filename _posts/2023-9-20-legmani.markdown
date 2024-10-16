@@ -3,7 +3,7 @@ layout: post
 title:  "Visual Manipulation with Legs"
 date:   2023-09-20 22:21:59 +00:00
 image: /images/Leg_mani.png
-categories: research
+categories: research1
 author: "Xialin He"
 authors: "<strong>Xialin He</strong>*, Chengjing Yuan*, Wenxuan Zhou, Ruihan Yang, David Held, Xiaolong Wang"
 venue: "CoRL2024"

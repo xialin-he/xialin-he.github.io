@@ -3,7 +3,7 @@ layout: post
 title:  "Learning Smooth Humanoid Locomotion through Lipschitz-Constrained Policies"
 date:   2024-10-15 2:21:59 +00:00
 image: /images/lcp.gif
-categories: research
+categories: research1
 author: "Xialin He"
 authors: "Zixuan Chen*, <strong>Xialin He*</strong>, Yen-Jen Wang*, Qiayuan Liao, Yanjie Ze, Zhongyu Li, S. Shankar Sastry, Jiajun Wu, Koushil Sreenath, Saurabh Gupta, Xue Bin Peng"
 venue: "arxiv2024"

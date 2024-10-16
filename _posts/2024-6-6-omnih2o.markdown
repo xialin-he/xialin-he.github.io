@@ -3,7 +3,7 @@ layout: post
 title:  "OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning"
 date:   2024-06-6 22:21:59 +00:00
 image: /images/Preview-OmniH2O-GIF2M.gif
-categories: research
+categories: research1
 author: "Xialin He"
 authors: "Tairan He*, Zhengyi Luo*, <strong>Xialin He</strong>*, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi"
 venue: "CoRL2024"

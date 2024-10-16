@@ -3,7 +3,7 @@ layout: post
 title:  "sim-to-real transfer for quadrupedal locomotion via terrain transformer"
 date:   2023-09-20 22:21:59 +00:00
 image: /images/TERT.png
-categories: research
+categories: research2
 author: "Xialin He"
 authors: "Hang lai, Weinan Zhang, <strong>Xialin He</strong>, Chen Yu, Zheng Tian, Yong Yu, Jun Wang"
 venue: "ICRA2023"
