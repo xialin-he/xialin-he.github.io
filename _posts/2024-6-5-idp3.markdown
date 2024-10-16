@@ -6,10 +6,10 @@ image: /images/idp3.gif
 categories: research
 author: "Xialin He"
 authors: "Yanjie Ze, Zixuan Chen, Wenhao Wang, Tianyi Chen, <strong>Xialin He</strong>, Ying Yuan, Xue Bin Peng, Jiajun Wu"
-venue: "in submission"
+venue: "arxiv2024"
 arxiv: https://arxiv.org/abs/2410.10803
 code: https://github.com/YanjieZe/Improved-3D-Diffusion-Policy
 website: https://humanoid-manipulation.github.io/
-# video: https://www.youtube.com/watch?v=ofgxZHv0GMk
+video: https://www.youtube.com/watch?v=6H2MkMetmFk
 ---
 We developed the Improved 3D Diffusion Policy (iDP3), a 3D visuomotor policy that enables humanoid robots to perform autonomous tasks in varied real-world settings. Unlike traditional models, iDP3 operates without the need for camera calibration or point-cloud segmentation by utilizing egocentric 3D visual representations. This approach allows for effective performance using only lab-collected data.
