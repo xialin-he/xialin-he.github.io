@@ -10,5 +10,6 @@ venue: "CoRL2024"
 arxiv: https://arxiv.org/abs/2410.11345
 # code: https://github.com/leonidk/fmb-plus
 website: https://legged-manipulation.github.io/
+video: https://www.youtube.com/watch?v=Sl7xuA4GEpA
 ---
 We propose a system that enables quadruped to manipulate objects with legs. We use reinforcement learning to train a policy to interact with the object based on point cloud observations, which demonstrates advanced manipulation skills with legs that has not been shown in previous work.
