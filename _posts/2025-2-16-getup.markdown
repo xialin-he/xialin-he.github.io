@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Learning Getting-Up Policies for Real-World Humanoid Robots"
+date:   2025-02-16 22:21:59 +00:00
+image: /images/getup.mp4
+categories: research1
+author: "Xialin He"
+authors: "<strong>Xialin He</strong>*, Runpei Dong*, Zixuan Chen, Saurabh Gupta"
+venue: "arxiv2025"
+# arxiv: https://arxiv.org/abs/2406.08858
+# code: https://github.com/leonidk/fmb-plus
+website: https://humanoid-getup.github.io/
+# dataset: https://cmu.app.box.com/s/kmayzq5ax2rxvwn97s0hzz0aq5vws9io
+video: https://www.youtube.com/watch?v=NPMUlf9soL0&t=5s
+---
+We proposes a learning framework for humanoid fall recovery. The method has two stages: first, discovering getting-up trajectories, then refining them for smoothness and robustness. The approach is successfully tested on a real G1 humanoid robot.
