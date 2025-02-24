@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "SoFar: Language-Grounded Orientation Bridges Spatial Reasoning and Object Manipulation"
+date:   2025-02-23 22:21:59 +00:00
+image: /images/sofar.gif
+categories: research2
+author: "Xialin He"
+authors: "Zekun Qi*, Wenyao Zhang*, Yufei Ding*, Runpei Dong, Xinqiang Yu, Jingwen Li, Lingyun Xu, Baoyu Li, <strong>Xialin He</strong>, Guofan Fan, Jiazhao Zhang, Jiawei He, Jiayuan Gu, Xin Jin, Kaisheng Ma, Zhizheng Zhang, He Wang, Li Yi"
+venue: "arxiv2025"
+arxiv: https://arxiv.org/abs/2502.13143
+code: https://github.com/qizekun/SoFar
+website: https://qizekun.github.io/sofar/
+video: https://www.youtube.com/watch?v=RRKEABZzbwA&feature=youtu.be
+---
+This paper proposes semantic orientation, using natural language to describe object orientations intuitively. The authors built OrienText300K, a dataset of 3D models with semantic annotations. Integrating this into a VLM system improves robotic manipulation, achieving 48.7% accuracy on Open6DOR and 74.9% on SIMPLER.
