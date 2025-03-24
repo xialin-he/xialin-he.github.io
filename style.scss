@@ -132,40 +132,47 @@ span.highlight {
   opacity: 0;
 }
 
-
-/* 你的原有 CSS 规则 … */
-
-/* 以下是与 Tab 切换相关的 CSS 规则 */
 .tab {
+  /* 去掉多余的背景/边框，仅用于排布 */
   overflow: hidden;
   margin: 10px 0;
+  /* 若想要一个下划线分割，可以加:
+  border-bottom: 1px solid #ccc;
+  */
 }
 
+/* 让 tab 的按钮看起来像普通链接，而不是大按钮 */
 .tab button {
-  background-color: #f1f1f1;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 16px;
-  transition: 0.3s;
+  background-color: transparent;  /* 透明背景 */
+  border: none;                   /* 去掉按钮边框 */
+  outline: none;                  /* 去掉点击时的 outline */
+  cursor: pointer;                /* 鼠标悬浮在上面时变成手形 */
+  padding: 0 10px;                /* 文字周围稍微留点左右间距 */
+  margin-right: 8px;             /* 每个按钮之间的间距 */
   font-size: 16px;
-  margin-right: 5px;
+  color: #666;                    /* 默认文本颜色 */
+  transition: color 0.3s, border-bottom 0.3s;
+  /* 也可以加一个“下划线 hover 效果”等等 */
 }
 
+/* hover 时，可以高亮一下，比如改变颜色或加下划线 */
 .tab button:hover {
-  background-color: #ddd;
+  color: #000;
+  /* 也可改为 border-bottom, text-decoration 等 */
+  text-decoration: underline;
 }
 
+/* 激活 (active) 时，更醒目一点 */
 .tab button.active {
-  background-color: #ccc;
+  color: #000;
+  font-weight: bold;
+  /* 可以改成边框或下划线突出显示
+     border-bottom: 2px solid #f09228; */
 }
 
+/* tabcontent 不变，主要控制显示/隐藏 */
 .tabcontent {
   display: none;
   padding: 6px 0px;
   margin-top: 0px;
 }
-
-/* … 如果还有其它自定义样式，继续写在下面或合适位置 … */
-
