@@ -131,3 +131,41 @@ span.highlight {
 .image-container:hover img.default-image {
   opacity: 0;
 }
+
+
+/* 你的原有 CSS 规则 … */
+
+/* 以下是与 Tab 切换相关的 CSS 规则 */
+.tab {
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.tab button {
+  background-color: #f1f1f1;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 0px;
+  margin-top: 0px;
+}
+
+/* … 如果还有其它自定义样式，继续写在下面或合适位置 … */
+
