@@ -132,47 +132,108 @@ span.highlight {
   opacity: 0;
 }
 
+// .tab {
+//   /* 去掉多余的背景/边框，仅用于排布 */
+//   overflow: hidden;
+//   margin: 10px 0;
+//   /* 若想要一个下划线分割，可以加:
+//   border-bottom: 1px solid #ccc;
+//   */
+// }
+
+// /* 让 tab 的按钮看起来像普通链接，而不是大按钮 */
+// .tab button {
+//   background-color: transparent;  /* 透明背景 */
+//   border: none;                   /* 去掉按钮边框 */
+//   outline: none;                  /* 去掉点击时的 outline */
+//   cursor: pointer;                /* 鼠标悬浮在上面时变成手形 */
+//   padding: 0 10px;                /* 文字周围稍微留点左右间距 */
+//   margin-right: 8px;             /* 每个按钮之间的间距 */
+//   font-size: 16px;
+//   color: #666;                    /* 默认文本颜色 */
+//   transition: color 0.3s, border-bottom 0.3s;
+//   /* 也可以加一个“下划线 hover 效果”等等 */
+// }
+
+// /* hover 时，可以高亮一下，比如改变颜色或加下划线 */
+// .tab button:hover {
+//   color: #000;
+//   /* 也可改为 border-bottom, text-decoration 等 */
+//   text-decoration: underline;
+// }
+
+// /* 激活 (active) 时，更醒目一点 */
+// .tab button.active {
+//   color: #000;
+//   font-weight: bold;
+//   /* 可以改成边框或下划线突出显示
+//      border-bottom: 2px solid #f09228; */
+// }
+
+// /* tabcontent 不变，主要控制显示/隐藏 */
+// .tabcontent {
+//   display: none;
+//   padding: 6px 0px;
+//   margin-top: 0px;
+// }
+/* ----- Tab 导航条 (按钮区) ----- */
 .tab {
-  /* 去掉多余的背景/边框，仅用于排布 */
-  overflow: hidden;
-  margin: 10px 0;
-  /* 若想要一个下划线分割，可以加:
-  border-bottom: 1px solid #ccc;
-  */
+  display: flex;                 /* 横排布局 */
+  gap: 20px;                     /* 按钮之间的间距 */
+  border-bottom: 1px solid #ddd; /* 底部分割线 */
+  margin: 20px 0;                /* 与上下元素的距离 */
 }
 
-/* 让 tab 的按钮看起来像普通链接，而不是大按钮 */
+/* ----- 每个 Tab 按钮样式 ----- */
 .tab button {
-  background-color: transparent;  /* 透明背景 */
-  border: none;                   /* 去掉按钮边框 */
-  outline: none;                  /* 去掉点击时的 outline */
-  cursor: pointer;                /* 鼠标悬浮在上面时变成手形 */
-  padding: 0 10px;                /* 文字周围稍微留点左右间距 */
-  margin-right: 8px;             /* 每个按钮之间的间距 */
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
   font-size: 16px;
-  color: #666;                    /* 默认文本颜色 */
-  transition: color 0.3s, border-bottom 0.3s;
-  /* 也可以加一个“下划线 hover 效果”等等 */
+  color: #666;
+  
+  /* 为动画下划线做定位用 */
+  position: relative;       
+  
+  /* 字体 & 颜色渐变 */
+  transition: color 0.3s;
 }
 
-/* hover 时，可以高亮一下，比如改变颜色或加下划线 */
-.tab button:hover {
-  color: #000;
-  /* 也可改为 border-bottom, text-decoration 等 */
-  text-decoration: underline;
+/* ----- 通过伪元素 ::after 做一条动画下划线，默认宽度为 0 ----- */
+.tab button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;                /* 下划线位置：略微离文字底部 */
+  width: 0;                    /* 默认宽度 0 */
+  height: 2px;
+  background-color: #f09228; 
+  transition: width 0.3s;      /* 宽度变化动画 */
 }
 
-/* 激活 (active) 时，更醒目一点 */
+/* ----- 鼠标悬浮 & 按钮激活时，下划线展开 + 文字变色 ----- */
+.tab button:hover,
 .tab button.active {
-  color: #000;
-  font-weight: bold;
-  /* 可以改成边框或下划线突出显示
-     border-bottom: 2px solid #f09228; */
+  color: #000;                 /* 文字变深 */
 }
 
-/* tabcontent 不变，主要控制显示/隐藏 */
+.tab button:hover::after,
+.tab button.active::after {
+  width: 100%;                 /* 下划线撑满 */
+}
+
+/* ----- Tab 内容区域，默认隐藏 ----- */
 .tabcontent {
-  display: none;
-  padding: 6px 0px;
-  margin-top: 0px;
+  display: none;               /* 默认不显示 */
+  padding: 20px 0;             /* 内容上下留些间距 */
+}
+
+/* 
+  如果在 JS 里给当前激活的 tabcontent 加上 .active，
+  就可以切换为显示状态 
+*/
+.tabcontent.active {
+  display: block;
 }
