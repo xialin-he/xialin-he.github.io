@@ -6,7 +6,7 @@ image: /images/getup.gif
 categories: research1
 author: "Xialin He"
 authors: "<strong>Xialin He</strong>*, Runpei Dong*, Zixuan Chen, Saurabh Gupta"
-venue: "arxiv2025"
+venue: "RSS2025"
 arxiv: https://arxiv.org/abs/2502.12152
 # code: https://github.com/leonidk/fmb-plus
 website: https://humanoid-getup.github.io/
