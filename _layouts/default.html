@@ -299,44 +299,48 @@
     // 页面载入后自动点击第一个 tab，让它默认显示
     document.getElementById("defaultOpen").click();
   </script>
+  <style>
+    .trail {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.8;
+      transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+    }
+  </style>
+  
   <script>
-    // 存鼠标轨迹点
     const trails = [];
+    const maxTrails = 20; // 最多保留20个拖尾点
   
     document.addEventListener('mousemove', function(e) {
-      trails.push({ x: e.clientX, y: e.clientY, opacity: 1 });
+      const trail = document.createElement('div');
+      trail.className = 'trail';
+      document.body.appendChild(trail);
+      trails.push({ element: trail, x: e.clientX, y: e.clientY, life: 1 });
+  
+      if (trails.length > maxTrails) {
+        const oldest = trails.shift();
+        oldest.element.remove();
+      }
     });
   
-    function animateTrails() {
+    function animate() {
       for (let i = 0; i < trails.length; i++) {
         const t = trails[i];
-        if (!t.element) {
-          t.element = document.createElement('div');
-          t.element.style.position = 'fixed';
-          t.element.style.width = '8px';
-          t.element.style.height = '8px';
-          t.element.style.borderRadius = '50%';
-          t.element.style.background = 'rgba(0, 0, 0, 0.5)';
-          t.element.style.pointerEvents = 'none';
-          t.element.style.zIndex = '9999';
-          document.body.appendChild(t.element);
-        }
-        t.opacity -= 0.02; // 每帧降低透明度
-        t.element.style.left = (t.x - 4) + 'px';
-        t.element.style.top = (t.y - 4) + 'px';
-        t.element.style.opacity = t.opacity;
-  
-        if (t.opacity <= 0) {
-          t.element.remove();
-          trails.splice(i, 1);
-          i--;
-        }
+        t.life -= 0.02;
+        t.element.style.transform = `translate(${t.x}px, ${t.y}px) scale(${t.life})`;
+        t.element.style.opacity = t.life;
       }
-      requestAnimationFrame(animateTrails);
+      requestAnimationFrame(animate);
     }
-  
-    animateTrails();
+    animate();
   </script>
+  
   
 
 </body>
