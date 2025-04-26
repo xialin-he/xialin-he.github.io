@@ -64,7 +64,7 @@
       background-image: url('images/IMG_4859.jpg'); /* 这里改成你的背景图地址 */
       background-size: cover;
       background-position: center;
-      opacity: 0.1; /* 调透明度，0~1之间，数字越小越透明 */
+      opacity: 0.3; /* 调透明度，0~1之间，数字越小越透明 */
       z-index: -1; /* 保证背景在最底层 */
     }
 
@@ -299,6 +299,45 @@
     // 页面载入后自动点击第一个 tab，让它默认显示
     document.getElementById("defaultOpen").click();
   </script>
+  <script>
+    // 存鼠标轨迹点
+    const trails = [];
+  
+    document.addEventListener('mousemove', function(e) {
+      trails.push({ x: e.clientX, y: e.clientY, opacity: 1 });
+    });
+  
+    function animateTrails() {
+      for (let i = 0; i < trails.length; i++) {
+        const t = trails[i];
+        if (!t.element) {
+          t.element = document.createElement('div');
+          t.element.style.position = 'fixed';
+          t.element.style.width = '8px';
+          t.element.style.height = '8px';
+          t.element.style.borderRadius = '50%';
+          t.element.style.background = 'rgba(0, 0, 0, 0.5)';
+          t.element.style.pointerEvents = 'none';
+          t.element.style.zIndex = '9999';
+          document.body.appendChild(t.element);
+        }
+        t.opacity -= 0.02; // 每帧降低透明度
+        t.element.style.left = (t.x - 4) + 'px';
+        t.element.style.top = (t.y - 4) + 'px';
+        t.element.style.opacity = t.opacity;
+  
+        if (t.opacity <= 0) {
+          t.element.remove();
+          trails.splice(i, 1);
+          i--;
+        }
+      }
+      requestAnimationFrame(animateTrails);
+    }
+  
+    animateTrails();
+  </script>
+  
 
 </body>
 </html>
