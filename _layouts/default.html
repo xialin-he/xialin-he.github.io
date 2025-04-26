@@ -324,7 +324,7 @@
   
     function initPoints() {
       points = [];
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 250; i++) {
         points.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
@@ -359,7 +359,7 @@
             const dy = p.y - q.y;
             const dist = Math.sqrt(dx * dx + dy * dy);
   
-            if (dist < 80) { // 只连附近粒子
+            if (dist < 100) { // 只连附近粒子
               const grad = ctx.createLinearGradient(p.x, p.y, q.x, q.y);
               grad.addColorStop(0, 'rgba(173,216,230,0.8)');
               grad.addColorStop(1, 'rgba(221,160,221,0.8)');
