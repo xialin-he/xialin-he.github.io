@@ -305,7 +305,7 @@
     const canvas = document.getElementById('trailCanvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
-    let mouse = { x: window.innerWidth/2, y: window.innerHeight/2 };
+    let mouse = { x: window.innerWidth/2, y: window.innerHeight/2, moved: false };
   
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
@@ -317,45 +317,38 @@
     window.addEventListener('mousemove', function(e) {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
+      mouse.moved = true;
     });
   
     class Particle {
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.vx = 0;
-        this.vy = 0;
-        this.size = Math.random() * 2 + 1;
+        this.x = mouse.x;
+        this.y = mouse.y;
+        this.vx = (Math.random() - 0.5) * 2;
+        this.vy = (Math.random() - 0.5) * 2;
+        this.life = 1; // 粒子生命周期
       }
       update() {
-        let dx = mouse.x - this.x;
-        let dy = mouse.y - this.y;
-        let dist = Math.sqrt(dx * dx + dy * dy);
-        let force = Math.min(100 / (dist * dist), 5);
-  
-        if (dist < 100) {
-          this.vx += force * dx;
-          this.vy += force * dy;
-        }
-        
-        this.vx *= 0.92; // 摩擦力，模拟惯性
-        this.vy *= 0.92;
         this.x += this.vx;
         this.y += this.vy;
+        this.life -= 0.02;
       }
       draw() {
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
-        ctx.fill();
+        ctx.moveTo(this.x, this.y);
+        ctx.lineTo(this.x - this.vx * 10, this.y - this.vy * 10);
+        ctx.strokeStyle = `rgba(255,255,255,${this.life})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
       }
     }
   
-    for (let i = 0; i < 100; i++) {
-      particles.push(new Particle());
-    }
-  
     function animate() {
+      if (mouse.moved) {
+        particles.push(new Particle());
+        if (particles.length > 100) particles.shift();
+      }
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (let p of particles) {
         p.update();
@@ -366,7 +359,6 @@
   
     animate();
   </script>
-  
   
   
 
