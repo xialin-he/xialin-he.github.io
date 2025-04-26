@@ -302,14 +302,14 @@
   <style>
     .trail {
       position: fixed;
-      width: 6px;
-      height: 6px;
+      width: 8px;
+      height: 8px;
       background: rgba(255, 255, 255, 0.8);
       border-radius: 50%;
       pointer-events: none;
       z-index: 9999;
       transform: translate(-50%, -50%); /* 让中心对齐 */
-      will-change: transform, opacity; /* 提高性能 */
+      will-change: transform, opacity;
     }
   </style>
   
@@ -327,10 +327,9 @@
     function createTrail(x, y) {
       const trail = document.createElement('div');
       trail.className = 'trail';
-      trail.style.left = `${x}px`;
-      trail.style.top = `${y}px`;
       document.body.appendChild(trail);
-      trails.push({ element: trail, life: 1 });
+      trails.push({ element: trail, x, y, life: 1 });
+  
       if (trails.length > maxTrails) {
         const old = trails.shift();
         old.element.remove();
@@ -341,12 +340,13 @@
       createTrail(mouseX, mouseY);
       for (let i = 0; i < trails.length; i++) {
         const t = trails[i];
-        t.life -= 0.02;
-        t.element.style.transform = `translate(${parseFloat(t.element.style.left)}px, ${parseFloat(t.element.style.top)}px) scale(${t.life})`;
+        t.life -= 0.03;
+        t.element.style.transform = `translate(${t.x}px, ${t.y}px) scale(${t.life})`;
         t.element.style.opacity = t.life;
       }
       requestAnimationFrame(animate);
     }
+  
     animate();
   </script>
   
