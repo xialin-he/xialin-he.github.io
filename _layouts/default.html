@@ -304,60 +304,90 @@
   <script>
     const canvas = document.getElementById('trailCanvas');
     const ctx = canvas.getContext('2d');
-    let particles = [];
-    let mouse = { x: window.innerWidth/2, y: window.innerHeight/2, moved: false };
+    let points = [];
+    let mouse = { x: null, y: null };
+    const maxDist = 150;
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
   
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      initPoints();
     });
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
   
     window.addEventListener('mousemove', function(e) {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
-      mouse.moved = true;
     });
   
-    class Particle {
-      constructor() {
-        this.x = mouse.x;
-        this.y = mouse.y;
-        this.vx = (Math.random() - 0.5) * 2;
-        this.vy = (Math.random() - 0.5) * 2;
-        this.life = 1; // 粒子生命周期
-      }
-      update() {
-        this.x += this.vx;
-        this.y += this.vy;
-        this.life -= 0.02;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.moveTo(this.x, this.y);
-        ctx.lineTo(this.x - this.vx * 10, this.y - this.vy * 10);
-        ctx.strokeStyle = `rgba(221,160,221,${this.life})`;
-        ctx.lineWidth = 1;
-        ctx.stroke();
+    function initPoints() {
+      points = [];
+      for (let i = 0; i < 100; i++) {
+        points.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5
+        });
       }
     }
   
-    function animate() {
-      if (mouse.moved) {
-        particles.push(new Particle());
-        if (particles.length > 100) particles.shift();
-      }
-      
+    function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let p of particles) {
-        p.update();
-        p.draw();
+  
+      // Move points
+      for (let p of points) {
+        p.x += p.vx;
+        p.y += p.vy;
+  
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
       }
-      requestAnimationFrame(animate);
+  
+      // Draw lines
+      for (let i = 0; i < points.length; i++) {
+        for (let j = i + 1; j < points.length; j++) {
+          const dx = points[i].x - points[j].x;
+          const dy = points[i].y - points[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+  
+          if (dist < maxDist) {
+            const grad = ctx.createLinearGradient(points[i].x, points[i].y, points[j].x, points[j].y);
+            grad.addColorStop(0, 'rgba(173,216,230,0.8)'); // 浅蓝
+            grad.addColorStop(1, 'rgba(221,160,221,0.8)'); // 淡紫
+  
+            ctx.beginPath();
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(points[j].x, points[j].y);
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = (1 - dist / maxDist) * 1.5;
+            ctx.stroke();
+          }
+        }
+  
+        // Draw mouse attraction
+        if (mouse.x && mouse.y) {
+          const dx = points[i].x - mouse.x;
+          const dy = points[i].y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < maxDist) {
+            ctx.beginPath();
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.strokeStyle = 'rgba(255,182,193,' + (1 - dist / maxDist) + ')'; // 粉色吸引
+            ctx.lineWidth = (1 - dist / maxDist) * 2;
+            ctx.stroke();
+          }
+        }
+      }
+  
+      requestAnimationFrame(draw);
     }
   
-    animate();
+    initPoints();
+    draw();
   </script>
   
   
