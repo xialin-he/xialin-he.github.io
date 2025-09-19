@@ -6,7 +6,7 @@ image: /images/sofar.gif
 categories: research2
 author: "Xialin He"
 authors: "Zekun Qi*, Wenyao Zhang*, Yufei Ding*, Runpei Dong, Xinqiang Yu, Jingwen Li, Lingyun Xu, Baoyu Li, <strong>Xialin He</strong>, Guofan Fan, Jiazhao Zhang, Jiawei He, Jiayuan Gu, Xin Jin, Kaisheng Ma, Zhizheng Zhang, He Wang, Li Yi"
-venue: "NeurIPS <span style='color:red'>(Spotlight)</span>"
+venue: "NeurIPS2025 <span style='color:red'>(Spotlight)</span>"
 arxiv: https://arxiv.org/abs/2502.13143
 code: https://github.com/qizekun/SoFar
 website: https://qizekun.github.io/sofar/
