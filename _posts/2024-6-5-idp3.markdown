@@ -6,7 +6,7 @@ image: /images/idp3.gif
 categories: research2
 author: "Xialin He"
 authors: "Yanjie Ze, Zixuan Chen, Wenhao Wang, Tianyi Chen, <strong>Xialin He</strong>, Ying Yuan, Xue Bin Peng, Jiajun Wu"
-venue: "IROS2025"
+venue: 'IROS2025 <span style="color:red">(Oral)</span>'
 arxiv: https://arxiv.org/abs/2410.10803
 code: https://github.com/YanjieZe/Improved-3D-Diffusion-Policy
 website: https://humanoid-manipulation.github.io/

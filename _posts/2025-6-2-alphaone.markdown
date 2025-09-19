@@ -6,7 +6,7 @@ image: /images/alphaone.png
 categories: research2
 author: "Xialin He"
 authors: "Junyu Zhang*, Runpei Dong*, Han Wang, Xuying Ning, Haoran Geng, Peihao Li, <strong>Xialin He</strong>, Yutong Bai, Jitendra Malik, Saurabh Gupta, Huan Zhang"
-venue: "arxiv2025"
+venue: "EMNLP2025"
 arxiv: https://arxiv.org/abs/2505.24863
 code: https://github.com/ASTRAL-Group/AlphaOne
 website: https://alphaone-project.github.io/
