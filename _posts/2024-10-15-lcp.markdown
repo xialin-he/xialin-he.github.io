@@ -6,7 +6,7 @@ image: /images/lcp.gif
 categories: research1
 author: "Xialin He"
 authors: "Zixuan Chen*, <strong>Xialin He*</strong>, Yen-Jen Wang*, Qiayuan Liao, Yanjie Ze, Zhongyu Li, S. Shankar Sastry, Jiajun Wu, Koushil Sreenath, Saurabh Gupta, Xue Bin Peng"
-venue: "IROS2025"
+venue: 'IROS2025 <span style="color:red">(Oral)</span>'
 arxiv: https://arxiv.org/abs/2410.11825
 code: https://github.com/zixuan417/smooth-humanoid-locomotion
 website: https://lipschitz-constrained-policy.github.io/
