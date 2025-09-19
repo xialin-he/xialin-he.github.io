@@ -6,7 +6,7 @@ image: /images/Preview-OmniH2O-GIF2M.gif
 categories: research1
 author: "Xialin He"
 authors: "Tairan He*, Zhengyi Luo*, <strong>Xialin He</strong>*, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi"
-venue: "CoRL2024"
+venue: "CoRL2024" <span style="color:red">(ORAL)</span>
 arxiv: https://arxiv.org/abs/2406.08858
 # code: https://github.com/leonidk/fmb-plus
 website: https://omni.human2humanoid.com/
