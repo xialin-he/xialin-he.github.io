@@ -270,9 +270,10 @@ const Page = () => {
         <Box
           w={{ base: '240px', md: '380px', lg: '480px' }}
           h={{ base: '240px', md: '380px', lg: '480px' }}
-          mt={{ base: -10, md: -16, lg: -20 }}
-          mb={{ base: -16, md: -32, lg: -40 }}
-          mx="auto"
+          mt={{ base: -44, md: -60, lg: -72 }}
+          mb={{ base: -16, md: -28, lg: -36 }}
+          left={{ base: '50%', md: '35%' }}
+          transform="translateX(-50%)"
           position="relative"
           zIndex={0}
         >
