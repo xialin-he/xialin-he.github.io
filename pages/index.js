@@ -268,8 +268,8 @@ const Page = () => {
 
         {/* ===== 3D CAT ===== */}
         <Box
-          w={{ base: '240px', md: '380px', lg: '480px' }}
-          h={{ base: '240px', md: '380px', lg: '480px' }}
+          w={{ base: '340px', md: '380px', lg: '480px' }}
+          h={{ base: '340px', md: '380px', lg: '480px' }}
           mt={{ base: -44, md: -60, lg: -72 }}
           mb={{ base: -16, md: -28, lg: -36 }}
           left={{ base: '50%', md: '35%' }}
