@@ -270,7 +270,7 @@ const Page = () => {
         <Box
           w={{ base: '300px', md: '380px', lg: '480px' }}
           h={{ base: '300px', md: '380px', lg: '480px' }}
-          mt={{ base: -34, md: -60, lg: -72 }}
+          mt={{ base: -40, md: -60, lg: -72 }}
           mb={{ base: -16, md: -28, lg: -36 }}
           left={{ base: '50%', md: '35%' }}
           transform="translateX(-50%)"
