@@ -236,8 +236,8 @@ const Page = () => {
                 borderColor={useColorModeValue('gray.300', 'whiteAlpha.400')}
                 borderWidth={3}
                 borderStyle="solid"
-                w="264px"
-                h="264px"
+                w={{ base: '180px', md: '240px', lg: '264px' }}
+                h={{ base: '180px', md: '240px', lg: '264px' }}
                 display="inline-block"
                 borderRadius="full"
                 overflow="hidden"
@@ -255,7 +255,15 @@ const Page = () => {
         </Section>
 
         {/* ===== 3D CAT ===== */}
-        <Box w="480px" h="480px" mt={-80} mb={-40} position="relative" left="35%" transform="translateX(-50%)" zIndex={0}>
+        <Box
+          w={{ base: '240px', md: '380px', lg: '480px' }}
+          h={{ base: '240px', md: '380px', lg: '480px' }}
+          mt={{ base: -10, md: -16, lg: -20 }}
+          mb={{ base: -16, md: -32, lg: -40 }}
+          mx="auto"
+          position="relative"
+          zIndex={0}
+        >
           <LazyVoxelCat />
         </Box>
 
