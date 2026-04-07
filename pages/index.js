@@ -18,8 +18,15 @@ import {
   Tab,
   TabPanel
 } from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
+import VoxelGeoLoader from '../components/voxel-geo-loader'
+
+const LazyVoxelCat = dynamic(() => import('../components/voxel-geo'), {
+  ssr: false,
+  loading: () => <VoxelGeoLoader />
+})
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -32,7 +39,7 @@ import {
 } from 'react-icons/io5'
 
 const ProfileImage = chakra('img', {
-  shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop)
+  shouldForwardProp: prop => ['src', 'alt', 'width', 'height', 'style'].includes(prop)
 })
 
 const SocialButton = ({ icon, href, label, colorScheme = 'teal' }) => (
@@ -196,6 +203,28 @@ const Page = () => {
               <Text mt={1} fontSize="sm" color={useColorModeValue('gray.500', 'gray.500')}>
                 Ph.D. Student in Computer Science @ UIUC
               </Text>
+              <Flex wrap="wrap" gap={2} mt={3}>
+                <SocialButton
+                  icon={<IoMail />}
+                  href="mailto:mulinjiu1129@gmail.com"
+                  label="Email"
+                />
+                <SocialButton
+                  icon={<IoLogoGithub />}
+                  href="https://github.com/mulinjiu"
+                  label="GitHub"
+                />
+                <SocialButton
+                  icon={<IoSchool />}
+                  href="https://scholar.google.com/citations?user=-oy5DaIAAAAJ&"
+                  label="Scholar"
+                />
+                <SocialButton
+                  icon={<IoLogoTwitter />}
+                  href="https://x.com/Xialin_He"
+                  label="Twitter"
+                />
+              </Flex>
             </Box>
             <Box
               flexShrink={0}
@@ -205,10 +234,10 @@ const Page = () => {
             >
               <Box
                 borderColor={useColorModeValue('gray.300', 'whiteAlpha.400')}
-                borderWidth={2}
+                borderWidth={3}
                 borderStyle="solid"
-                w="120px"
-                h="120px"
+                w="264px"
+                h="264px"
                 display="inline-block"
                 borderRadius="full"
                 overflow="hidden"
@@ -216,13 +245,19 @@ const Page = () => {
                 <ProfileImage
                   src="/images/IMG_5935.jpg"
                   alt="Profile photo"
-                  width="120"
-                  height="120"
+                  width="360"
+                  height="360"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </Box>
             </Box>
           </Box>
         </Section>
+
+        {/* ===== 3D CAT ===== */}
+        <Box w="480px" h="480px" mt={-80} mb={-40} position="relative" left="35%" transform="translateX(-50%)" zIndex={0}>
+          <LazyVoxelCat />
+        </Box>
 
         {/* ===== BIO ===== */}
         <Section delay={0.2}>
@@ -286,31 +321,6 @@ const Page = () => {
           </Text>
         </Section>
 
-        {/* ===== SOCIAL LINKS ===== */}
-        <Section delay={0.3}>
-          <Flex wrap="wrap" gap={2} justify="center">
-            <SocialButton
-              icon={<IoMail />}
-              href="mailto:mulinjiu1129@gmail.com"
-              label="Email"
-            />
-            <SocialButton
-              icon={<IoLogoGithub />}
-              href="https://github.com/mulinjiu"
-              label="GitHub"
-            />
-            <SocialButton
-              icon={<IoSchool />}
-              href="https://scholar.google.com/citations?user=-oy5DaIAAAAJ&"
-              label="Scholar"
-            />
-            <SocialButton
-              icon={<IoLogoTwitter />}
-              href="https://x.com/Xialin_He"
-              label="Twitter"
-            />
-          </Flex>
-        </Section>
 
         {/* ===== PUBLICATIONS ===== */}
         <Section delay={0.4}>

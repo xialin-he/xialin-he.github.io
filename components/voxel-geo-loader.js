@@ -16,10 +16,10 @@ export const GeoContainer = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
     m="auto"
-    mt={['-20px', '-60px', '-120px']}
-    mb={['-40px', '-100px', '-160px']}
-    w={[280, 480, 640]}
-    h={[280, 480, 640]}
+    mt={0}
+    mb={0}
+    w="100%"
+    h="100%"
     position="relative"
   >
     {children}
