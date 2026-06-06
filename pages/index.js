@@ -386,23 +386,6 @@ const Page = () => {
             </Link>
           </BioSection>
         </Section>
-
-        {/* ===== LOVE CORNER ===== */}
-        <Box
-          as="a"
-          href="https://xwx84768.github.io/"
-          target="_blank"
-          position="fixed"
-          bottom={5}
-          right={5}
-          fontSize="20px"
-          opacity={0.5}
-          transition="0.2s"
-          zIndex={9999}
-          _hover={{ opacity: 1, transform: 'scale(1.2)' }}
-        >
-          ❤️
-        </Box>
       </Container>
     </Layout>
   )
