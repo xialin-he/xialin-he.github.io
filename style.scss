@@ -400,26 +400,6 @@ span.highlight {
 
 
 /* ========================================
-   LOVE CORNER (keep existing)
-   ======================================== */
-.love-corner {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 20px;
-  text-decoration: none;
-  z-index: 9999;
-  opacity: 0.5;
-  transition: 0.2s;
-}
-
-.love-corner:hover {
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-
-/* ========================================
    RESPONSIVE - Mobile
    ======================================== */
 @media screen and (max-width: 768px) {
