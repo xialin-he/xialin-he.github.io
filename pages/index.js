@@ -62,7 +62,7 @@ const leadAuthorPubs = [
   {
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'arXiv2026',
+    venue: 'IROS2026',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
@@ -126,7 +126,7 @@ const leadAuthorPubs = [
 const otherPubs = [
   {
     title: 'Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation',
-    authors: 'Runpei Dong*, Ziyan Li*, <strong>Xialin He</strong>, Saurabh Gupta',
+    authors: 'Runpei Dong*, Ziyan Li*, Arjun Gupta, <strong>Xialin He</strong>, Saurabh Gupta',
     venue: 'Arxiv2026',
     thumbnail: '/images/thumbnails/hero_poster.gif',
     links: {

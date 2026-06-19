@@ -5,7 +5,7 @@ date:   2026-02-11 22:21:59 +00:00
 image: /images/hero_poster.gif
 categories: research2
 author: "Xialin He"
-authors: "Runpei Dong*, Ziyan Li*, <strong>Xialin He</strong>, Saurabh Gupta"
+authors: "Runpei Dong*, Ziyan Li*, Arjun Gupta, <strong>Xialin He</strong>, Saurabh Gupta"
 venue: "Arxiv2026"
 arxiv: https://arxiv.org/abs/2602.16705
 # code: https://github.com/ASTRAL-Group/AlphaOne
