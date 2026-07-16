@@ -60,6 +60,17 @@ const SocialButton = ({ icon, href, label, colorScheme = 'teal' }) => (
 // ===== PUBLICATION DATA =====
 const leadAuthorPubs = [
   {
+    title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
+    authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
+    venue: 'arXiv2026',
+    thumbnail: '/images/thumbnails/contactmimic.gif',
+    links: {
+      arxiv: 'https://arxiv.org/abs/2607.08742',
+      website: 'https://lixinyao11.github.io/contactmimic-page/'
+    },
+    description: 'A learning framework that tracks explicit part-level binary contact commands alongside keypoint trajectories, decoupling contact behavior from keypoint geometry for precise and controllable humanoid-object interaction.'
+  },
+  {
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
     venue: 'IROS2026',

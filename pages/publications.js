@@ -14,6 +14,17 @@ import { PublicationCard } from '../components/publication'
 // Same data as index - could be extracted to a shared data file
 const leadAuthorPubs = [
   {
+    title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
+    authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
+    venue: 'arXiv2026',
+    thumbnail: '/images/thumbnails/contactmimic.gif',
+    links: {
+      arxiv: 'https://arxiv.org/abs/2607.08742',
+      website: 'https://lixinyao11.github.io/contactmimic-page/'
+    },
+    description: 'A learning framework tracking part-level contact commands alongside keypoint trajectories for precise, controllable humanoid-object interaction.'
+  },
+  {
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
     venue: 'IROS2026',
