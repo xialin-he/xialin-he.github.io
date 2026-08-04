@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
           {/* Google Analytics */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"
+            src="https://www.googletagmanager.com/gtag/js?id=G-G5DMT5B9EB"
           />
           <script
             dangerouslySetInnerHTML={{
@@ -18,7 +18,7 @@ export default class Document extends NextDocument {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-E00L9PT3V9');
+                gtag('config', 'G-G5DMT5B9EB');
               `
             }}
           />
