@@ -6,7 +6,7 @@ image: /images/interprior.gif
 categories: research2
 author: "Xialin He"
 authors: "Sirui Xu, Samuel Schulter, Morteza Ziyadi, <strong>Xialin He</strong>, Xiaohan Fei, Yu-Xiong Wang, Liang-Yan Gui"
-venue: "CVPR2026"
+venue: "CVPR2026 <span style='color:red'>(Highlight)</span>"
 arxiv: https://arxiv.org/abs/2602.06035
 # code: https://github.com/ASTRAL-Group/AlphaOne
 website: https://sirui-xu.github.io/InterPrior/
