@@ -31,6 +31,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PublicationCard } from '../components/publication'
+import VisitorTracker from '../components/visitor-tracker'
 import {
   IoLogoTwitter,
   IoLogoGithub,
@@ -397,6 +398,8 @@ const Page = () => {
             </Link>
           </BioSection>
         </Section>
+
+        <VisitorTracker />
       </Container>
     </Layout>
   )
