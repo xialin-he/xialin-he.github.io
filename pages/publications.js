@@ -16,7 +16,7 @@ const leadAuthorPubs = [
   {
     title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
     authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
-    venue: 'arXiv2026',
+    venue: 'CoRL2026',
     thumbnail: '/images/thumbnails/contactmimic.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2607.08742',
@@ -27,7 +27,7 @@ const leadAuthorPubs = [
   {
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'IROS2026',
+    venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
@@ -92,7 +92,7 @@ const otherPubs = [
   {
     title: 'Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation',
     authors: 'Runpei Dong*, Ziyan Li*, Arjun Gupta, <strong>Xialin He</strong>, Saurabh Gupta',
-    venue: 'Arxiv2026',
+    venue: 'CoRL2026',
     thumbnail: '/images/thumbnails/hero_poster.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2602.16705',

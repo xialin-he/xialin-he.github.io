@@ -5,7 +5,7 @@ date:   2026-07-09 22:21:59 +00:00
 categories: research1
 author: "Xialin He"
 authors: "Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta"
-venue: "arXiv2026"
+venue: "CoRL2026"
 arxiv: https://arxiv.org/abs/2607.08742
 website: https://lixinyao11.github.io/contactmimic-page/
 ---
