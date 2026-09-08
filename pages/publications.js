@@ -103,7 +103,7 @@ const otherPubs = [
   {
     title: 'InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions',
     authors: 'Sirui Xu, Samuel Schulter, Morteza Ziyadi, <strong>Xialin He</strong>, Xiaohan Fei, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span> · <span style="color:#f0a020">🏆 Best Poster Award, Interactive Physical AI Workshop</span>',
+    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span><br/><span style="color:#f0a020">🏆 Best Poster Award, Interactive Physical AI Workshop</span>',
     thumbnail: '/images/thumbnails/interprior.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2602.06035',
