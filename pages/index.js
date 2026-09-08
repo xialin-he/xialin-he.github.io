@@ -218,6 +218,11 @@ const news = [
       '🏆 <strong>ULTRA</strong> named a <strong>Finalist</strong> for the IROS 2026 Best Paper Award on Application and Mobile Manipulation.'
   },
   {
+    date: 'Sep 2026',
+    html:
+      '<strong>ContactMimic</strong> and <strong>HERO</strong> accepted to <strong>CoRL 2026</strong>.'
+  },
+  {
     date: 'Jun 2026',
     html:
       '🏆 <strong>InterPrior</strong> won the <strong>Best Poster Award</strong> at the Interactive Physical AI Workshop, CVPR 2026.'
@@ -225,11 +230,6 @@ const news = [
   {
     date: 'Jun 2026',
     html: '<strong>ULTRA</strong> accepted to <strong>IROS 2026</strong> as an Oral.'
-  },
-  {
-    date: '2026',
-    html:
-      '<strong>ContactMimic</strong> and <strong>HERO</strong> accepted to <strong>CoRL 2026</strong>.'
   },
   {
     date: 'Apr 2026',
