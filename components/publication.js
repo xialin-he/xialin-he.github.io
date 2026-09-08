@@ -17,6 +17,7 @@ export const PublicationCard = ({
   thumbnail,
   links = {},
   description,
+  award,
   isLeadAuthor
 }) => {
   const cardBg = useColorModeValue('whiteAlpha.700', 'whiteAlpha.100')
@@ -60,6 +61,26 @@ export const PublicationCard = ({
           </Box>
         )}
         <Box flex={1}>
+          {award && (
+            <Badge
+              mb={2}
+              px={2}
+              py={0.5}
+              borderRadius="full"
+              color="white"
+              bgGradient="linear(to-r, #ff1e1e, #ff5252)"
+              boxShadow="0 0 10px rgba(255,30,30,0.55)"
+              fontSize="0.72em"
+              fontWeight="bold"
+              letterSpacing="0.02em"
+              textTransform="none"
+              display="inline-flex"
+              alignItems="center"
+              gap="4px"
+            >
+              {award}
+            </Badge>
+          )}
           <Text fontWeight="bold" fontSize="md" mb={1}>
             {title}
           </Text>

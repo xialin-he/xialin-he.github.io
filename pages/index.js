@@ -61,6 +61,18 @@ const SocialButton = ({ icon, href, label, colorScheme = 'teal' }) => (
 // ===== PUBLICATION DATA =====
 const leadAuthorPubs = [
   {
+    title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
+    authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
+    venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
+    award: '🏆 Best Paper Candidate (Mobile Manipulation)',
+    thumbnail: '/images/thumbnails/ultra.gif',
+    links: {
+      arxiv: 'https://arxiv.org/abs/2603.03279',
+      website: 'https://ultra-humanoid.github.io/'
+    },
+    description: 'A unified framework for autonomous humanoid whole-body loco-manipulation combining physics-driven motion retargeting with multimodal control.'
+  },
+  {
     title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
     authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
     venue: 'CoRL2026',
@@ -70,17 +82,6 @@ const leadAuthorPubs = [
       website: 'https://lixinyao11.github.io/contactmimic-page/'
     },
     description: 'A learning framework that tracks explicit part-level binary contact commands alongside keypoint trajectories, decoupling contact behavior from keypoint geometry for precise and controllable humanoid-object interaction.'
-  },
-  {
-    title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
-    authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
-    thumbnail: '/images/thumbnails/ultra.gif',
-    links: {
-      arxiv: 'https://arxiv.org/abs/2603.03279',
-      website: 'https://ultra-humanoid.github.io/'
-    },
-    description: 'A unified framework for autonomous humanoid whole-body loco-manipulation combining physics-driven motion retargeting with multimodal control.'
   },
   {
     title: 'Learning Getting-Up Policies for Real-World Humanoid Robots',
