@@ -28,8 +28,8 @@ export const PublicationCard = ({
 
   const awardStyles = {
     red: {
-      bg: 'linear(to-r, #ff1e1e, #ff5252)',
-      shadow: '0 0 10px rgba(255,30,30,0.55)'
+      bg: 'linear(to-r, #d93a3a, #e35a5a)',
+      shadow: 'none'
     },
     gold: {
       bg: 'linear(to-r, #92400e, #d97706)',
