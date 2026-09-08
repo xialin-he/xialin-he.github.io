@@ -18,7 +18,7 @@ export const PublicationCard = ({
   links = {},
   description,
   award,
-  awardVariant = 'red',
+  awardVariant = 'amber',
   isLeadAuthor
 }) => {
   const cardBg = useColorModeValue('whiteAlpha.700', 'whiteAlpha.100')
@@ -27,16 +27,20 @@ export const PublicationCard = ({
   const descColor = useColorModeValue('gray.600', 'gray.400')
 
   const awardStyles = {
+    amber: {
+      bg: 'linear(to-r, #b45309, #d97706)',
+      shadow: 'none'
+    },
     red: {
       bg: 'linear(to-r, #d93a3a, #e35a5a)',
       shadow: 'none'
     },
-    gold: {
-      bg: 'linear(to-r, #92400e, #d97706)',
-      shadow: '0 0 10px rgba(217,119,6,0.5)'
+    teal: {
+      bg: 'linear(to-r, #2c7a7b, #319795)',
+      shadow: 'none'
     }
   }
-  const aw = awardStyles[awardVariant] || awardStyles.red
+  const aw = awardStyles[awardVariant] || awardStyles.amber
 
   return (
     <Box
