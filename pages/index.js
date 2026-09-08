@@ -150,7 +150,7 @@ const otherPubs = [
   {
     title: 'InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions',
     authors: 'Sirui Xu, Samuel Schulter, Morteza Ziyadi, <strong>Xialin He</strong>, Xiaohan Fei, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span>',
+    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span> · <span style="color:#f0a020">🏆 Best Poster Award, Interactive Physical AI Workshop</span>',
     thumbnail: '/images/thumbnails/interprior.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2602.06035',
@@ -210,7 +210,67 @@ const otherPubs = [
   }
 ]
 
+// ===== NEWS DATA (newest first) =====
+const news = [
+  {
+    date: 'Sep 2026',
+    html:
+      '🏆 <strong>ULTRA</strong> named a <strong>Finalist</strong> for the IROS 2026 Best Paper Award on Application and Mobile Manipulation.'
+  },
+  {
+    date: 'Jun 2026',
+    html:
+      '🏆 <strong>InterPrior</strong> won the <strong>Best Poster Award</strong> at the Interactive Physical AI Workshop, CVPR 2026.'
+  },
+  {
+    date: 'Jun 2026',
+    html: '<strong>ULTRA</strong> accepted to <strong>IROS 2026</strong> as an Oral.'
+  },
+  {
+    date: '2026',
+    html:
+      '<strong>ContactMimic</strong> and <strong>HERO</strong> accepted to <strong>CoRL 2026</strong>.'
+  },
+  {
+    date: 'Apr 2026',
+    html: '<strong>InterPrior</strong> selected as a <strong>CVPR 2026 Highlight</strong>.'
+  },
+  {
+    date: 'Sep 2025',
+    html: '<strong>SoFar</strong> accepted to <strong>NeurIPS 2025</strong> as a Spotlight.'
+  },
+  {
+    date: 'Aug 2025',
+    html: '<strong>AlphaOne</strong> accepted to <strong>EMNLP 2025</strong>.'
+  },
+  {
+    date: 'Jun 2025',
+    html:
+      '<strong>LCP</strong> and <strong>iDP3</strong> accepted to <strong>IROS 2025</strong> as Orals.'
+  },
+  {
+    date: 'Apr 2025',
+    html:
+      '<strong>Learning Getting-Up Policies</strong> accepted to <strong>RSS 2025</strong>.'
+  },
+  {
+    date: 'Sep 2024',
+    html:
+      '<strong>OmniH2O</strong> and <strong>Visual Manipulation with Legs</strong> accepted to <strong>CoRL 2024</strong>.'
+  },
+  {
+    date: 'Aug 2024',
+    html: 'Started my Ph.D. in Computer Science at <strong>UIUC</strong>.'
+  }
+]
+
 const Page = () => {
+  const newsBorder = useColorModeValue('gray.200', 'whiteAlpha.200')
+  const newsBg = useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')
+  const newsScrollThumb = useColorModeValue('#cbd5e0', '#4a5568')
+  const newsDateColor = useColorModeValue('teal.600', 'teal.300')
+  const newsTextColor = useColorModeValue('gray.700', 'gray.300')
+
   return (
     <Layout title="Home">
       <Container maxW="container.md">
@@ -355,6 +415,57 @@ const Page = () => {
           </Text>
         </Section>
 
+        {/* ===== NEWS ===== */}
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title" fontSize={20}>
+            News
+          </Heading>
+          <Box
+            mt={2}
+            maxH="220px"
+            overflowY="auto"
+            borderWidth="1px"
+            borderColor={newsBorder}
+            borderRadius="lg"
+            bg={newsBg}
+            px={4}
+            py={3}
+            sx={{
+              '&::-webkit-scrollbar': { width: '6px' },
+              '&::-webkit-scrollbar-track': { background: 'transparent' },
+              '&::-webkit-scrollbar-thumb': {
+                background: newsScrollThumb,
+                borderRadius: '3px'
+              }
+            }}
+          >
+            {news.map((item, i) => (
+              <Flex
+                key={i}
+                gap={3}
+                align="baseline"
+                mb={i === news.length - 1 ? 0 : 2.5}
+              >
+                <Text
+                  as="span"
+                  flexShrink={0}
+                  minW="70px"
+                  fontSize="xs"
+                  fontWeight={600}
+                  color={newsDateColor}
+                >
+                  {item.date}
+                </Text>
+                <Text
+                  as="span"
+                  fontSize="sm"
+                  color={newsTextColor}
+                  dangerouslySetInnerHTML={{ __html: item.html }}
+                />
+              </Flex>
+            ))}
+          </Box>
+        </Section>
 
         {/* ===== PUBLICATIONS ===== */}
         <Section delay={0.4}>

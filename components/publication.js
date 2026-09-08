@@ -18,12 +18,25 @@ export const PublicationCard = ({
   links = {},
   description,
   award,
+  awardVariant = 'red',
   isLeadAuthor
 }) => {
   const cardBg = useColorModeValue('whiteAlpha.700', 'whiteAlpha.100')
   const borderColor = useColorModeValue('gray.200', 'whiteAlpha.200')
   const hoverBg = useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')
   const descColor = useColorModeValue('gray.600', 'gray.400')
+
+  const awardStyles = {
+    red: {
+      bg: 'linear(to-r, #ff1e1e, #ff5252)',
+      shadow: '0 0 10px rgba(255,30,30,0.55)'
+    },
+    gold: {
+      bg: 'linear(to-r, #92400e, #d97706)',
+      shadow: '0 0 10px rgba(217,119,6,0.5)'
+    }
+  }
+  const aw = awardStyles[awardVariant] || awardStyles.red
 
   return (
     <Box
@@ -68,8 +81,8 @@ export const PublicationCard = ({
               py={0.5}
               borderRadius="full"
               color="white"
-              bgGradient="linear(to-r, #ff1e1e, #ff5252)"
-              boxShadow="0 0 10px rgba(255,30,30,0.55)"
+              bgGradient={aw.bg}
+              boxShadow={aw.shadow}
               fontSize="0.72em"
               fontWeight="bold"
               letterSpacing="0.02em"
