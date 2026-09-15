@@ -18,7 +18,7 @@ export const PublicationCard = ({
   links = {},
   description,
   award,
-  awardVariant = 'amber',
+  awardVariant = 'orange',
   isLeadAuthor
 }) => {
   const cardBg = useColorModeValue('whiteAlpha.700', 'whiteAlpha.100')
@@ -26,21 +26,6 @@ export const PublicationCard = ({
   const hoverBg = useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')
   const descColor = useColorModeValue('gray.600', 'gray.400')
 
-  const awardStyles = {
-    amber: {
-      bg: 'linear(to-r, #b45309, #d97706)',
-      shadow: 'none'
-    },
-    red: {
-      bg: 'linear(to-r, #d93a3a, #e35a5a)',
-      shadow: 'none'
-    },
-    teal: {
-      bg: 'linear(to-r, #2c7a7b, #319795)',
-      shadow: 'none'
-    }
-  }
-  const aw = awardStyles[awardVariant] || awardStyles.amber
 
   return (
     <Box
@@ -78,26 +63,6 @@ export const PublicationCard = ({
           </Box>
         )}
         <Box flex={1}>
-          {award && (
-            <Badge
-              mb={2}
-              px={2}
-              py={0.5}
-              borderRadius="full"
-              color="white"
-              bgGradient={aw.bg}
-              boxShadow={aw.shadow}
-              fontSize="0.72em"
-              fontWeight="bold"
-              letterSpacing="0.02em"
-              textTransform="none"
-              display="inline-flex"
-              alignItems="center"
-              gap="4px"
-            >
-              {award}
-            </Badge>
-          )}
           <Text fontWeight="bold" fontSize="md" mb={1}>
             {title}
           </Text>
@@ -107,9 +72,26 @@ export const PublicationCard = ({
             mb={1}
             dangerouslySetInnerHTML={{ __html: authors }}
           />
-          <Text fontSize="sm" mb={2}>
+          <Text fontSize="sm" mb={award ? 1 : 2}>
             <em dangerouslySetInnerHTML={{ __html: venue }} />
           </Text>
+          {award && (
+            <Badge
+              mb={2}
+              px={2}
+              py={0.5}
+              borderRadius="full"
+              colorScheme={awardVariant}
+              variant="subtle"
+              fontSize="0.72em"
+              fontWeight="semibold"
+              textTransform="none"
+              display="inline-flex"
+              alignItems="center"
+            >
+              {award}
+            </Badge>
+          )}
           <HStack spacing={2} flexWrap="wrap">
             {links.arxiv && (
               <PaperLink href={links.arxiv} label="arxiv" />
