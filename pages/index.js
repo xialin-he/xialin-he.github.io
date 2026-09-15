@@ -63,8 +63,7 @@ const leadAuthorPubs = [
   {
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
-    award: '🏆 Finalist · Best Paper Award on Mobile Manipulation',
+    venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span><br/><span style="color:#f0a020">🏆 Finalist, Best Paper Award on Mobile Manipulation</span>',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
