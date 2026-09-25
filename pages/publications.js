@@ -21,7 +21,7 @@ const leadAuthorPubs = [
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
-      code: 'https://github.com/MuLinjiu/ULTRA-training',
+      code: 'https://github.com/MuLinjiu/ULTRA-locomanip',
       website: 'https://ultra-humanoid.github.io/'
     },
     description: 'A unified framework for autonomous humanoid whole-body loco-manipulation combining physics-driven motion retargeting with multimodal control.'
