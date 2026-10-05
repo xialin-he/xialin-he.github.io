@@ -76,7 +76,7 @@ const leadAuthorPubs = [
   {
     title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
     authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
-    venue: 'CoRL2026',
+    venue: 'CoRL2026<br/><span style="color:#f0a020">🏆 Best Paper Award, Contact &amp; Learning Workshop, IROS 2026</span>',
     thumbnail: '/images/thumbnails/contactmimic.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2607.08742',
@@ -213,6 +213,11 @@ const otherPubs = [
 
 // ===== NEWS DATA (newest first) =====
 const news = [
+  {
+    date: 'Oct 2026',
+    html:
+      '🏆 <strong>ContactMimic</strong> won the <strong>Best Paper Award</strong> at the Contact &amp; Learning Workshop, IROS 2026.'
+  },
   {
     date: 'Sep 2026',
     html:
