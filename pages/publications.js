@@ -91,7 +91,7 @@ const leadAuthorPubs = [
 
 const otherPubs = [
   {
-    title: 'Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation',
+    title: 'HERO: Learning Humanoid End-Effector Control for Visual Whole-Body Open-Vocabulary Object Grasping',
     authors: 'Runpei Dong*, Ziyan Li*, Arjun Gupta, <strong>Xialin He</strong>, Saurabh Gupta',
     venue: 'CoRL2026',
     thumbnail: '/images/thumbnails/hero_poster.gif',
@@ -138,7 +138,7 @@ const otherPubs = [
     description: 'A test-time framework controlling reasoning speed using a universal alpha parameter.'
   },
   {
-    title: 'Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies',
+    title: 'Generalizable Humanoid Manipulation with 3D Diffusion Policies',
     authors: 'Yanjie Ze, Zixuan Chen, Wenhao Wang, Tianyi Chen, <strong>Xialin He</strong>, Ying Yuan, Xue Bin Peng, Jiajun Wu',
     venue: 'IROS2025 <span style="color:#ff63c3">(Oral)</span>',
     thumbnail: '/images/thumbnails/idp3.gif',
