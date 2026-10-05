@@ -64,7 +64,7 @@ const leadAuthorPubs = [
     title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation',
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
     venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
-    award: '🏆 Finalist, Best Paper Award on Mobile Manipulation',
+    award: '🏆 IROS 2026 Best Paper Award on Mobile Manipulation · Finalist',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
@@ -76,7 +76,7 @@ const leadAuthorPubs = [
   {
     title: 'ContactMimic: Humanoid Object Interaction via Contact Control',
     authors: 'Xinyao Li*, <strong>Xialin He</strong>*, Runpei Dong, Saurabh Gupta',
-    venue: 'CoRL2026<br/><span style="color:#f0a020">🏆 Best Paper Award, Contact &amp; Learning Workshop, IROS 2026</span>',
+    venue: 'CoRL2026<br/><span style="color:#f0a020">🏅 Best Paper Award, Contact &amp; Learning Workshop, IROS 2026</span>',
     thumbnail: '/images/thumbnails/contactmimic.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2607.08742',
@@ -151,7 +151,7 @@ const otherPubs = [
   {
     title: 'InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions',
     authors: 'Sirui Xu, Samuel Schulter, Morteza Ziyadi, <strong>Xialin He</strong>, Xiaohan Fei, Yu-Xiong Wang, Liang-Yan Gui',
-    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span><br/><span style="color:#f0a020">🏆 Best Poster Award, Interactive Physical AI Workshop</span>',
+    venue: 'CVPR2026 <span style="color:#ff63c3">(Highlight)</span><br/><span style="color:#f0a020">🏅 Best Poster Award, Interactive Physical AI Workshop</span>',
     thumbnail: '/images/thumbnails/interprior.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2602.06035',
@@ -216,7 +216,7 @@ const news = [
   {
     date: 'Oct 2026',
     html:
-      '🏆 <strong>ContactMimic</strong> won the <strong>Best Paper Award</strong> at the Contact &amp; Learning Workshop, IROS 2026.'
+      '🏅 <strong>ContactMimic</strong> won the <strong>Best Paper Award</strong> at the Contact &amp; Learning Workshop, IROS 2026.'
   },
   {
     date: 'Sep 2026',
@@ -231,7 +231,7 @@ const news = [
   {
     date: 'Jun 2026',
     html:
-      '🏆 <strong>InterPrior</strong> won the <strong>Best Poster Award</strong> at the Interactive Physical AI Workshop, CVPR 2026.'
+      '🏅 <strong>InterPrior</strong> won the <strong>Best Poster Award</strong> at the Interactive Physical AI Workshop, CVPR 2026.'
   },
   {
     date: 'Jun 2026',
