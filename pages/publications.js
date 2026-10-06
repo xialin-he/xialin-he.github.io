@@ -34,7 +34,8 @@ const leadAuthorPubs = [
     thumbnail: '/images/thumbnails/contactmimic.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2607.08742',
-      website: 'https://lixinyao11.github.io/contactmimic-page/'
+      website: 'https://lixinyao11.github.io/contactmimic-page/',
+      certificate: '/images/awards/contactmimic-iros2026-contact-learning-best-paper.jpg'
     },
     description: 'A learning framework tracking part-level contact commands alongside keypoint trajectories for precise, controllable humanoid-object interaction.'
   },
