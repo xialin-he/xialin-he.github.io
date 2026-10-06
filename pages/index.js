@@ -65,6 +65,7 @@ const leadAuthorPubs = [
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
     venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
     award: '🏆 IROS 2026 Best Paper Award on Mobile Manipulation · Finalist',
+    awardHref: '/images/awards/ultra-iros2026-best-paper-finalist.pdf',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',

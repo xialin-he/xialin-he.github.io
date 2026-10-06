@@ -18,6 +18,7 @@ export const PublicationCard = ({
   links = {},
   description,
   award,
+  awardHref,
   awardVariant = 'orange',
   isLeadAuthor
 }) => {
@@ -77,6 +78,11 @@ export const PublicationCard = ({
           </Text>
           {award && (
             <Badge
+              as={awardHref ? 'a' : 'span'}
+              href={awardHref}
+              target={awardHref ? '_blank' : undefined}
+              rel={awardHref ? 'noopener noreferrer' : undefined}
+              title={awardHref ? 'View the award certificate' : undefined}
               mb={2}
               px={2}
               py={0.5}
@@ -88,8 +94,12 @@ export const PublicationCard = ({
               textTransform="none"
               display="inline-flex"
               alignItems="center"
+              cursor={awardHref ? 'pointer' : 'default'}
+              transition="all 0.2s"
+              _hover={awardHref ? { textDecoration: 'underline', transform: 'translateY(-1px)' } : undefined}
             >
               {award}
+              {awardHref && <ExternalLinkIcon ml={1} boxSize="0.9em" />}
             </Badge>
           )}
           <HStack spacing={2} flexWrap="wrap">
