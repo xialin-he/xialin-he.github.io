@@ -18,12 +18,12 @@ const leadAuthorPubs = [
     authors: '<strong>Xialin He</strong>*, Sirui Xu*, Xinyao Li, Runpei Dong, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui',
     venue: 'IROS2026 <span style="color:#ff63c3">(Oral)</span>',
     award: '🏆 IROS 2026 Best Paper Award on Mobile Manipulation · Finalist',
-    awardHref: '/images/awards/ultra-iros2026-best-paper-finalist.pdf',
     thumbnail: '/images/thumbnails/ultra.gif',
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
       code: 'https://github.com/Sirui-Xu/ULTRA',
-      website: 'https://ultra-humanoid.github.io/'
+      website: 'https://ultra-humanoid.github.io/',
+      certificate: '/images/awards/ultra-iros2026-best-paper-finalist.pdf'
     },
     description: 'A unified framework for autonomous humanoid whole-body loco-manipulation combining physics-driven motion retargeting with multimodal control.'
   },
