@@ -347,7 +347,7 @@ const Page = () => {
                 <ProfileImage
                   src="/images/profile-hover.jpg"
                   alt=""
-                  width="900"
+                  width="1200"
                   height="1200"
                   position="absolute"
                   top={0}
