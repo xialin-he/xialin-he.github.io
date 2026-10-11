@@ -333,12 +333,28 @@ const Page = () => {
                 display="inline-block"
                 borderRadius="full"
                 overflow="hidden"
+                position="relative"
+                role="group"
               >
                 <ProfileImage
-                  src="/images/profile.jpg"
+                  src="/images/profile-main.jpg"
                   alt="Profile photo"
-                  width="360"
-                  height="360"
+                  width="900"
+                  height="1200"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                />
+                {/* Second photo fades in over the first on hover */}
+                <ProfileImage
+                  src="/images/profile-hover.jpg"
+                  alt=""
+                  width="900"
+                  height="1200"
+                  position="absolute"
+                  top={0}
+                  left={0}
+                  opacity={0}
+                  transition="opacity 0.4s ease-in-out"
+                  _groupHover={{ opacity: 1 }}
                   style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </Box>
