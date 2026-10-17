@@ -69,7 +69,7 @@ const leadAuthorPubs = [
     links: {
       arxiv: 'https://arxiv.org/abs/2603.03279',
       code: 'https://github.com/Sirui-Xu/ULTRA',
-      website: 'https://ultra-humanoid.github.io/',
+      website: 'https://ultrahumanoid.github.io/',
       certificate: '/images/awards/ultra-iros2026-best-paper-finalist.pdf'
     },
     description: 'A unified framework for autonomous humanoid whole-body loco-manipulation combining physics-driven motion retargeting with multimodal control.'
